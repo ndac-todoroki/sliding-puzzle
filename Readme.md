@@ -1,6 +1,50 @@
+# sliding-puzzle.rb
+SlidingPuzzle::SlidingPuzzle
+
+## 利用方法
+
+```
+require_relative './sliding-puzzle'
+include SlidingPuzzle
+```
+
+動作例
+
+```
+puzzle = SlidingPuzzle.new(3, 3, [1,4,5,2,8,6,7,3,nil])
+print puzzle
+#=>
++---+---+---+
+| 1 | 4 | 5 |
++---+---+---+
+| 2 | 8 | 6 |
++---+---+---+
+| 7 | 3 |   |
++---+---+---+
+```
+
+```
+print puzzle.move(position: ABOVE)      # ABOVEにあるタイルを空白位置に動かす
+#=>
++---+---+---+
+| 1 | 4 | 5 |
++---+---+---+
+| 2 | 8 |   |
++---+---+---+
+| 7 | 3 | 6 |
++---+---+---+
+```
+
+
+
+## 自動解決スクリプトの説明
+以下Readme.txtの流用なので記法があれ
+
 【実行方法】
 
+```
 $ ruby ./solvepuzzle-cui.rb
+```
 
 
 【起動後のオプション指定】
@@ -18,10 +62,11 @@ $ ruby ./solvepuzzle-cui.rb
 
 例）
 
+```
  ２ ８ ６
  １ ４ ５   なら   2 8 6 1 4 5 7 3 nil
  ７ ３ □
-
+```
 
 ・Enter the goal's body. Separate elements by spaces. 
 　Place a 'nil' where there's no tiles.
@@ -36,6 +81,9 @@ $ ruby ./solvepuzzle-cui.rb
 
 
 【出力】
-sliding-puzzle_ｘ数_ｙ数_試行数_ランダム数.log ってファイルに書きだされます。見てみましょう。
+```
+sliding-puzzle_ｘ数_ｙ数_試行数_ランダム数.log 
+```
+ってファイルに書きだされます。見てみましょう。
 
 
