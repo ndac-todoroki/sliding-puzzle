@@ -7,6 +7,8 @@ SlidingPuzzle::SlidingPuzzle
 require_relative './sliding-puzzle'
 include SlidingPuzzle
 ```
+includeすると ```print``` でSlidingPuzzleオブジェクトの場合は以下のように特殊な書き出しをしてくれたり、
+Arrayクラスに ```calc_with``` メソッドが追加されたりします。
 
 動作例
 
