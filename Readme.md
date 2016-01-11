@@ -1,6 +1,8 @@
 # sliding-puzzle.rb
 SlidingPuzzle::SlidingPuzzle
 
+#### このライブラリは授業課題のために作られたものです。継続的にメンテナンスされる予定はありません
+
 ## 利用方法
 
 ```
